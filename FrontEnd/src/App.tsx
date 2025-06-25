@@ -22,7 +22,7 @@ const fetchProblem = async () => {
     const data = await res.json();
     setProblem(data);
     setAnswer("");
-    setFeedback("");
+    setFeedback("Enter answer and click 'Check Answer'");
   };
 
 // Fetch a problem at start
@@ -49,13 +49,15 @@ const fetchProblem = async () => {
 
 // Rendered TSX
   return (
-    <div className="app-container">
-      <h1>Algebra 1 Practice</h1>
-      <p className="problem"><strong>Problem:</strong> {problem.problem}</p>
+    <div>
+      <div className="title-container"><h1>Algebra 1 Practice</h1></div>
+      <div className="problem"><p><strong>Problem:</strong> {problem.problem}</p></div>
 
       <div className="input-group">
         <input
-          type="number"
+          type="text"
+	  inputMode="numeric"
+	  pattern="[0-9]*"
           placeholder="Enter your answer"
           value={answer}
           onChange={(e) => setAnswer(e.target.value)}
@@ -63,7 +65,8 @@ const fetchProblem = async () => {
         <button onClick={handleSubmit}>Check Answer</button>
       </div>
 
-      <p className="feedback">{feedback}</p>
+	<div className="feedback"><p>{feedback}</p></div>
+
 
       <button onClick={fetchProblem} className="next-button">Next Question</button>
     </div>
