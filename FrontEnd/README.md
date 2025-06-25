@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+📘 FrontEnd – MathWebsite
+This is the React + TypeScript frontend for the MathWebsite project. The goal of this project is to create a clean, fast, and interactive Algebra 1 practice web app for students and lifelong learners.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Why This Project Exists
+As a math tutor and computer science graduate, I was frustrated by existing platforms that were:
 
-Currently, two official plugins are available:
+  1) Too rigid or bloated for beginner learners
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  2) Not responsive or intuitive for simple practice
 
-## Expanding the ESLint configuration
+So I built my own.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🧱 What This Frontend Does
+  1) Connects to a FastAPI backend to fetch real-time math problems
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  2) Displays one Algebra 1 problem at a time
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  3) Accepts user input and gives instant ✅/❌ feedback
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  4) Designed to be beginner-friendly
+     
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+🚀 Tech Stack
+  1) React (Vite) – Fast dev and build time
+
+  2) TypeScript – Type safety and clarity
+
+  3) CSS – Clean UI, separated in App.css
+
+  4) FastAPI Backend – Serves randomized algebra problems via API (see BackEnd folder)
+
+  5) SymPy (Python) – Symbolic math engine
+
+🛠️ How to Run
+  1) Clone the repo:
+    ```git clone https://github.com/QG02/MathWebsite.git```
+    ```cd MathWebsite/FrontEnd```
+
+  2) Install dependencies:
+    ```npm install```
+    **NOTICE:** this project was done in a terminal python virtual environment (venv), take into consideration before conitnuing.
+      
+  3) Start development server:
+    ```npm run dev```
+
+🧩 Features in Progress
+  1) Topic selection dropdown (e.g., Foundations, Equations, Word Problems)
+
+  2) Mobile responsiveness & accessibility improvements
+
+  3) Auth & user tracking (Firebase)
+
+🤝 Contributing
+This is a personal sprint-based project, but ideas and feedback are welcome! If you're a fellow tutor, learner, or dev and have thoughts, feel free to get in contact with me on LinkedIn!
+https://www.linkedin.com/in/qays-ghazal-27521529b/
+
+💡 Inspiration
+This project is built by someone who loves teaching, programming, and math. It's for students who just want quick practice — and for educators who want a tool that's actually built around how humans learn.
