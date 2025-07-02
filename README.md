@@ -1,6 +1,6 @@
-# 🧮 Algebra 1 Practice App
+# 🧮 Mathematics Practice App
 
-Welcome to the Algebra 1 Practice App — a focused, educational tool built from the ground up to help students sharpen their algebra skills through clean, responsive design and instant feedback.
+Welcome to the Mathematics Practice App — a focused, educational tool built from the ground up to help students sharpen their algebra skills through clean, responsive design and instant feedback.
 
 ## 🎯 Purpose & Inspiration
 
@@ -10,7 +10,7 @@ Rather than continue to work around those limitations, I decided to build a bett
 
 ## 🚀 Project Goals
 
-The Algebra 1 Practice App is designed with a few key goals in mind:
+The Mathematics Practice App is designed with a few key goals in mind:
 
 - ✅ **Offer students a clean and intuitive interface to practice math problems.**
 - ✅ **Provide real-time feedback with no login required (at least for the MVP).**
